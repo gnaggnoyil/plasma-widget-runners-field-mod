@@ -18,7 +18,7 @@ ScrollView {
     signal itemTriggered(var index)
     
     Keys.forwardTo: [listView]
-    Component {
+    property Component textDelegate: Component {
         id: textDelegate
         Item {
             height: 18
@@ -40,7 +40,7 @@ ScrollView {
         }
     }
     
-    Component {
+    property Component simpleDelegate: Component {
         id: simpleDelegate
         Item {
             height: 28
@@ -69,7 +69,7 @@ ScrollView {
         }
     }
     
-    Component {
+    property Component fancyDelegate: Component {
         id: fancyDelegate
         Item {
             height: 64
@@ -97,7 +97,7 @@ ScrollView {
         }
     }
     
-    Component {
+    property Component sectionDelegate: Component {
         id: sectionDelegate
         Rectangle {
             height: childrenRect.height
@@ -112,7 +112,7 @@ ScrollView {
         }
     }
 
-    Component {
+    property Component historyHeader: Component {
         id: historyHeader;
         Text {
             text: i18n("You recently searched for:")
