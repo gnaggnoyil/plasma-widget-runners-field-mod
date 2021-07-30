@@ -15,7 +15,7 @@ TextField {
      
      // Bind to main query property
      text: main.query;
-     font.family: "Noto Sans"; font.pointSize: 10;
+     font.family: sans-serif; font.pointSize: 10;
 
     PlasmaCore.IconItem {
         source: "search"

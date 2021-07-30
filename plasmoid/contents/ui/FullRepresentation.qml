@@ -39,7 +39,7 @@ Item {
                 
                 color: "white"
                 text: i18n("KRunner"); 
-                font.family: "Noto Sans"; font.pointSize: 12;
+                font.family: sans-serif; font.pointSize: 12;
             }
     }
     
